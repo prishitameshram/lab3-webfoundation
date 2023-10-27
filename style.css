@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8; /* Background color for the entire page */
+  }
+  
+  .tipcalculator {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+  
+  .tipcalculator h1 {
+    font-size: 24px;
+    color: #FFA500; /* Shade of Orange */
+    font-weight: bold;
+  }
+  
+  .tipcalculator input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px;
+  }
+  
+  .tipcalculator button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #FFA500; /* Shade of Orange */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tipcalculator button:disabled {
+    background-color: #ccc; /* Disabled button color */
+    cursor: not-allowed;
+  }
+  
+  .tipcalculator button:hover {
+    background-color: #FF8C00; /* Hover color (Slightly darker shade) */
+  }
+  
+ /* Add media queries for responsiveness */
+ @media (max-width: 768px) {
+    .tipcalculator {
+      width: 80%; /* Adjust the container width for smaller screens */
+      margin: 10px auto; /* Add margins and center the container horizontally */
+    }
+  }
+
+  

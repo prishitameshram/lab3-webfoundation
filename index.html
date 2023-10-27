@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <form id="tipForm"> <!-- Wrap form controls in a <form> tag -->
+    <div class="tipcalculator">
+      <h1>Tip Calculator</h1>
+
+      <label for="billTotal">Bill Total</label> <!-- Added labels -->
+      <input type="number" id="billTotal" placeholder="Enter your bill amount" oninput="calculateTip">
+      
+      <label for="tipPercentage">Tip Percentage</label>
+      <input type="range" id="tipPercentage" min="0" max="100" step="1" oninput="calculateTip">
+      <output for="tipPercentage" id="tipPercentageOutput">0%</output>
+      
+      <label for="tipAmount">Tip Amount</label> <!-- Added label -->
+      <input type="text" id="tipAmount" disabled> <!-- Disabled input -->
+      
+      <label for="totalBill">Total Bill with Tip</label> <!-- Added label -->
+      <input type="text" id="totalBill" disabled> <!-- Disabled input -->
+    </div>
+  </form> <!-- Close the <form> tag -->
+
+  <script src="script.js"></script>
+</body>
+</html>
