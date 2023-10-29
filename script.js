@@ -1,5 +1,3 @@
-// JavaScript functions for the Tip Calculator
-
 function calculateTip() {
   var billTotal = parseFloat(document.getElementById("billTotal").value);
   var tipPercentage = parseFloat(document.getElementById("tipPercentage").value);
@@ -11,9 +9,9 @@ function calculateTip() {
     return;
   }
 
-  document.getElementById("tipAmount").value = tipAmount.toFixed(2); // Update the value property of the disabled input
-  document.getElementById("totalBill").value = totalBill.toFixed(2); // Update the value property of the disabled input
-  document.getElementById("tipPercentageOutput").value = tipPercentage + "%"; // Update the value property of the tip percentage output
+  document.getElementById("tipAmount").value = tipAmount.toFixed(2); // Updated value property of the disabled input
+  document.getElementById("totalBill").value = totalBill.toFixed(2); // Updated value property of the disabled input
+  document.getElementById("tipPercentageOutput").value = tipPercentage + "%"; // Updated value property of the tip percentage output
 }
 
 document.getElementById("tipForm").addEventListener("input", calculateTip); // Added event listener
